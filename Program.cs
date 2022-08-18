@@ -10,6 +10,7 @@ int Exp (int num1, int num2)
         result = result * num1;
     return result;
 }
+
 int ReadNumbers (string str)
 {
     Console.Write(str);
@@ -24,6 +25,25 @@ Console.WriteLine(Exp(number, degree));
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
+
+/*
+int ReadNumbers (string str)
+{
+    Console.Write(str);
+    return Convert.ToInt32(Console.ReadLine());
+}
+
+int number = ReadNumbers("Input number: ");
+
+int SummDigits (int num)
+{
+    int result = 0;
+    for (; num > 0; num = num / 10)
+        result += num % 10;
+    return result;
+}
+Console.WriteLine(SummDigits(number));
+*/
 
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
