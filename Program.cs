@@ -48,3 +48,25 @@ Console.WriteLine(SummDigits(number));
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
+
+/*
+int[] RandomArray()
+{
+    int[] arr = new int[8];
+    for(int i = 0; i < arr.Length; i++)
+        arr[i] = new Random().Next(0, 100);
+    return arr;
+}
+void ShowArray(int[] array)
+{
+    Console.Write("[");
+    for(int j = 0; j < array.Length; j++)
+    {
+        Console.Write(array[j]);
+        if (j < array.Length - 1)
+            Console.Write(", ");
+    }
+    Console.Write("]");
+}
+ShowArray(RandomArray());
+*/
