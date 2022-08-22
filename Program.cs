@@ -54,7 +54,10 @@ int[] RandomArray()
 {
     int[] arr = new int[8];
     for(int i = 0; i < arr.Length; i++)
-        arr[i] = new Random().Next(0, 100);
+    {
+        Console.Write($"Input number {i+1}: ");
+        arr[i] = Convert.ToInt32(Console.ReadLine());
+    }
     return arr;
 }
 void ShowArray(int[] array)
